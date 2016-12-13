@@ -103,7 +103,7 @@ public class SimpleSample extends ChaincodeBase {
 			return "{\"Error\":\"Insufficient asset holding value for requested transfer amount \"}";
 		valFrom = valFrom-valA;
 		float percival=1;
-		valTo = valTo+valA- percival ;
+		valTo = valTo+valA-percival ;
 		System.out.println("Transfer "+fromName+">"+toName+" am='"+am+"' new values='"+valFrom+"','"+ valTo+"'");
 		stub.putState(fromName,""+ valFrom);
 		stub.putState(toName, ""+valTo);		
